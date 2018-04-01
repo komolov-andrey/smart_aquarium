@@ -35,7 +35,7 @@ public class LoginActivity extends Activity {
             @Override
             public void onClick(View view) {
                 // Обработчик кнопки
-                toast = Toast.makeText(getApplicationContext(),"Пора покормить кота!", Toast.LENGTH_SHORT);
+                toast = Toast.makeText(getApplicationContext(),"Пора покормить кота!!!", Toast.LENGTH_SHORT);
                 toast.show();
             }
         });

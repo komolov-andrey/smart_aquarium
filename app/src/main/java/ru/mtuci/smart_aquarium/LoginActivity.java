@@ -1,6 +1,7 @@
 package ru.mtuci.smart_aquarium;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -35,8 +36,12 @@ public class LoginActivity extends Activity {
             @Override
             public void onClick(View view) {
                 // Обработчик кнопки
-                toast = Toast.makeText(getApplicationContext(),"Пора покормить кота!!!", Toast.LENGTH_SHORT);
-                toast.show();
+
+                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                    startActivity(intent);
+                    toast = Toast.makeText(getApplicationContext(), "Пользователь не авторизован", Toast.LENGTH_SHORT);
+                    toast.show();
+
             }
         });
     }

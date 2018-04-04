@@ -35,13 +35,13 @@ public class LoginActivity extends Activity {
         mEmailSignInButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Обработчик кнопки
-
+                try {
                     Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                     startActivity(intent);
+                }catch(Exception ex) {
                     toast = Toast.makeText(getApplicationContext(), "Пользователь не авторизован", Toast.LENGTH_SHORT);
                     toast.show();
-
+                }
             }
         });
     }

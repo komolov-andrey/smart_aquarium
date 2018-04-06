@@ -2,7 +2,7 @@ package ru.mtuci.smart_aquarium;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.widget.Toolbar;
+import android.support.v7.widget.Toolbar;
 
 public class FeedingIntervals extends Activity {
 

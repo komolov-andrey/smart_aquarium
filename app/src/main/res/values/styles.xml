@@ -5,11 +5,22 @@
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorAccent">@color/orange</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimary</item>
+        <item name="android:actionModeBackground">@color/orange</item>
+        <item name="android:fastScrollPreviewBackgroundLeft">@color/orange</item>
+        <item name="android:fastScrollPreviewBackgroundRight">@color/orange</item>
     </style>
 
     <style name="MySwitch" parent="Theme.AppCompat.Light">
-        <item name="colorSwitchThumbNormal">@android:color/holo_orange_dark</item>
+        <item name="colorSwitchThumbNormal">@color/orange</item>
+        <item name="colorPrimary">@color/orange</item>
+        <item name="colorPrimaryDark">@color/orange</item>
+        <item name="colorAccent">@color/orange</item>
+        <item name="colorControlNormal">@color/orange</item>
+        <item name="colorControlActivated">@color/orange</item>
+        <item name="colorControlHighlight">@color/orange</item>
+        <item name="colorButtonNormal">@color/orange</item>
     </style>
 
 </resources>

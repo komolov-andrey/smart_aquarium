@@ -12,25 +12,25 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="0dp">
+            android:padding="20dp">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="left"
-                android:padding="10dp"
+                android:padding="15dp"
                 android:text="Освещение"
-                android:textSize="30dp" />
+                android:textSize="25sp" />
 
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="left"
-                android:padding="10dp"
+                android:padding="15dp"
                 android:text="Работает"
-                android:textColor="@android:color/holo_green_dark"
-                android:textSize="30dp" />
+                android:textColor="@color/green"
+                android:textSize="25sp" />
 
 
             <View
@@ -39,24 +39,23 @@
                 android:background="@android:color/darker_gray" />
 
 
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="left"
-                android:padding="10dp"
+                android:padding="15dp"
                 android:text="Температура"
-                android:textSize="30dp" />
+                android:textSize="25sp" />
 
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="left"
-                    android:padding="10dp"
-                    android:text="25 С"
-                    android:textColor="#000000"
-                    android:textSize="30dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:padding="15dp"
+                android:text="25 С"
+                android:textColor="#000000"
+                android:textSize="25sp" />
 
 
             <View
@@ -69,18 +68,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="left"
-                android:padding="10dp"
+                android:padding="15dp"
                 android:text="Помпа"
-                android:textSize="30dp" />
+                android:textSize="25sp" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="left"
-                    android:padding="10dp"
-                    android:text="Выключено"
-                    android:textColor="#FF0000"
-                    android:textSize="30dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:padding="15dp"
+                android:text="Выключено"
+                android:textColor="@color/red"
+                android:textSize="25sp" />
 
 
             <View
@@ -93,18 +92,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="left"
-                android:padding="10dp"
+                android:padding="15dp"
                 android:text="Кормление"
-                android:textSize="30dp" />
+                android:textSize="25sp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="left"
-                android:padding="10dp"
+                android:padding="15dp"
                 android:text="Ожидание"
-                android:textColor="#FFE4B5"
-                android:textSize="30dp" />
+                android:textColor="@color/yellow"
+                android:textSize="25sp" />
 
 
         </LinearLayout>

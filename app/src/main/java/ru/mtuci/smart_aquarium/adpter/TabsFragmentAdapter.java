@@ -14,7 +14,7 @@ public class TabsFragmentAdapter extends FragmentPagerAdapter {
     public TabsFragmentAdapter(FragmentManager fm) {
         super(fm);
 
-        tabs = new String[] {"tab 1", "tab 2"};
+        tabs = new String[] {"СОСТОЯНИЕ", "ПАРАМЕТРЫ"};
     }
 
     @Override

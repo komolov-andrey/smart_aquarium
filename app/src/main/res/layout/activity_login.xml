@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient"
     android:gravity="center">
 
     <!-- Login progress -->
@@ -29,7 +30,7 @@
             android:gravity="center"
             android:text="Система \n\«Умный Аквариум\»\n"
             android:textColor="@android:color/black"
-            android:textSize="44sp" />
+            android:textSize="30sp" />
 
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
@@ -39,10 +40,12 @@
                 android:id="@+id/email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
                 android:hint="@string/prompt_email"
                 android:inputType="textEmailAddress"
                 android:maxLines="1"
-                android:singleLine="true" />
+                android:singleLine="true"
+                android:textColorLink="@color/orange" />
 
         </android.support.design.widget.TextInputLayout>
 
@@ -66,11 +69,13 @@
 
         <Button
             android:id="@+id/email_sign_in_button"
-            android:layout_width="wrap_content"
-            android:layout_height="61dp"
+            android:layout_width="136dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="56dp"
+            android:layout_marginTop="75dp"
+            android:background="@color/orange"
             android:text="@string/action_sign_in"
+            android:textSize="20sp"
             android:textStyle="bold" />
 
     </LinearLayout>

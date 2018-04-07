@@ -19,10 +19,8 @@
                 android:id="@+id/my_toolbar_feeding"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                android:background="#688af9"
+                android:background="@color/colorPrimary"
                 android:elevation="4dp"
-                android:onClick="onClick"
-                android:clickable="true"
                 android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
                 app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
                 app:title="Интервалы кормления"
@@ -57,16 +55,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="left"
-                    android:padding="10dp"
+                    android:padding="15dp"
                     android:text="10:00 - 11:00"
                     android:textColor="#000000"
-                    android:textSize="15dp" />
+                    android:textSize="25sp" />
 
                 <CheckBox
                     android:id="@+id/checkBoxBold"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="200dp" />
+                    android:layout_marginLeft="150dp" />
 
             </LinearLayout>
 
@@ -80,16 +78,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="left"
-                    android:padding="10dp"
+                    android:padding="15dp"
                     android:text="14:00 - 14:30"
                     android:textColor="#000000"
-                    android:textSize="15dp" />
+                    android:textSize="25sp" />
 
                 <CheckBox
                     android:id="@+id/checkBoxBold1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="200dp" />
+                    android:layout_marginLeft="150dp" />
 
             </LinearLayout>
 
@@ -103,16 +101,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="left"
-                    android:padding="10dp"
+                    android:padding="15dp"
                     android:text="15:00 - 15:30"
                     android:textColor="#000000"
-                    android:textSize="15dp" />
+                    android:textSize="25sp" />
 
                 <CheckBox
                     android:id="@+id/checkBoxBold2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="200dp" />
+                    android:layout_marginLeft="150dp" />
 
             </LinearLayout>
 

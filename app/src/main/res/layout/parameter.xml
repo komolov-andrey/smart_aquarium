@@ -42,7 +42,7 @@
                 android:layout_height="match_parent"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
-                android:layout_marginLeft="130dp"
+                android:layout_marginLeft="90dp"
                 android:checked="false"
                 android:shadowColor="@color/orange"
                 android:theme="@style/MySwitch" />
@@ -96,7 +96,7 @@
                 android:layout_height="match_parent"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
-                android:layout_marginLeft="130dp"
+                android:layout_marginLeft="90dp"
                 android:checked="false"
                 android:theme="@style/MySwitch" />
 

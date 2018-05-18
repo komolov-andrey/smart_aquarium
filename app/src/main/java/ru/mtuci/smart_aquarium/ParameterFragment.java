@@ -15,6 +15,7 @@ import android.widget.Toast;
 import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
 import java.util.regex.Matcher;
@@ -222,8 +223,10 @@ public class ParameterFragment extends Fragment {
         if (mTimePicker != null) {
             return;
         }
-        int hour = AquaSettings.parseTime(view.getText().toString()).getHours();
-        int minute = AquaSettings.parseTime(view.getText().toString()).getMinutes();
+        Calendar cal = Calendar.getInstance();
+        cal.setTime(AquaSettings.parseTime(view.getText().toString()));
+        int hour = cal.get(Calendar.HOUR_OF_DAY);
+        int minute = cal.get(Calendar.MINUTE);
         mTimePicker = new TimePickerDialog(getContext(), new TimePickerDialog.OnTimeSetListener() {
 
             @Override

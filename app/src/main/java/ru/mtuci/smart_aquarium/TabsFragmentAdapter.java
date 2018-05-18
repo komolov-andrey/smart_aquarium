@@ -1,11 +1,8 @@
-package ru.mtuci.smart_aquarium.adpter;
+package ru.mtuci.smart_aquarium;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-
-import ru.mtuci.smart_aquarium.fragment.ParameterFragment;
-import ru.mtuci.smart_aquarium.fragment.StateFragment;
 
 public class TabsFragmentAdapter extends FragmentPagerAdapter {
 

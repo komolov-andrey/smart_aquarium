@@ -15,22 +15,17 @@ import android.widget.Toast;
  */
 public class LoginActivity extends Activity {
 
-
-    // UI references.
     private AutoCompleteTextView mEmailView;
     private EditText mPasswordView;
     private View mProgressView;
     private View mLoginFormView;
-
-    //сообщение
-    Toast toast = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        Button mEmailSignInButton = (Button) findViewById(R.id.email_sign_in_button);
+        Button mEmailSignInButton = (Button)findViewById(R.id.email_sign_in_button);
 
         mEmailSignInButton.setOnClickListener(new OnClickListener() {
             @Override
@@ -38,8 +33,8 @@ public class LoginActivity extends Activity {
                 try {
                     Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                     startActivity(intent);
-                }catch(Exception ex) {
-                    toast = Toast.makeText(getApplicationContext(), "Пользователь не авторизован", Toast.LENGTH_SHORT);
+                } catch (Exception ex) {
+                    Toast toast = Toast.makeText(getApplicationContext(), "Пользователь не авторизован", Toast.LENGTH_SHORT);
                     toast.show();
                 }
             }

@@ -10,6 +10,8 @@
         <item name="android:actionModeBackground">@color/orange</item>
         <item name="android:fastScrollPreviewBackgroundLeft">@color/orange</item>
         <item name="android:fastScrollPreviewBackgroundRight">@color/orange</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
     </style>
 
     <style name="MySwitch" parent="Theme.AppCompat.Light">
@@ -21,6 +23,11 @@
         <item name="colorControlActivated">@color/orange</item>
         <item name="colorControlHighlight">@color/orange</item>
         <item name="colorButtonNormal">@color/orange</item>
+    </style>
+
+    <style name="Body1" parent="Base.TextAppearance.AppCompat.Body1">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">14sp</item>
     </style>
 
 </resources>

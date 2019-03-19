@@ -4,6 +4,8 @@ import android.app.TimePickerDialog;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.text.InputFilter;
+import android.text.Spanned;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -215,6 +217,22 @@ public class ParameterFragment extends Fragment {
         mLightEnd.setOnClickListener(listener);
         mPumpStart.setOnClickListener(listener);
         mFeedStart.setOnClickListener(listener);
+
+        InputFilter filter = new InputFilter() {
+            public CharSequence filter(CharSequence source, int start, int end,
+                                       Spanned dest, int dstart, int dend) {
+                for (int i = start; i < end; i++) {
+                    if (!Character.isLetterOrDigit(source.charAt(i))) { // Accept only letter & digits ; otherwise just return
+                        Toast.makeText(getContext(), "Слишком большое число", Toast.LENGTH_SHORT).show();
+                        return "";
+                    }
+                }
+                return null;
+            }
+
+        };
+
+        mPumpInterval.setFilters(new InputFilter[]{filter});
 
         return rootView;
     }
